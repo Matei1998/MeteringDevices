@@ -1,0 +1,20 @@
+.inputWithIcon {
+    
+    margin-bottom:10px;
+    
+    .input-container {
+      display: flex;
+      align-items: flex-end; 
+    
+    
+    .icon {
+      color: rgba(0, 0, 0, 0.54);
+      margin-right: 8px; 
+      margin-top: 4px; 
+      margin-bottom: 4px; 
+    }
+    
+    .text-field {
+    }
+  }
+}

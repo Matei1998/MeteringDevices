@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.user-container {
+    background-image: url('../assets/deviceImage.png'); // Imagine de fundal
+    background-size: cover; // Acoperă întregul container
+    background-position: center; // Centrează imaginea
+    min-height: 100vh; // Asigură că containerul acoperă întreaga înălțime a paginii
+    display: flex; // Folosește flexbox
+    flex-direction: column; // Îndreaptă elementele pe verticală
+    align-items: center; // Centrează pe orizontală
+    position: relative; // Poziționează elementele în raport cu containerul
+
+    .device-list-container {
+        background-color: rgba(255, 255, 255, 0.8); // Fundal alb cu transparență
+        border-radius: 8px; // Colțuri rotunjite
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Umbre
+        padding: 20px; // Spațiu pe interior
+        max-width: 600px; // Lățime maximă
+        width: 100%; // Lățime 100% pentru a se adapta pe ecrane mici
+        margin-top: 60px; // Margină de sus pentru a nu fi acoperită de buton
+
+        h1 {
+            font-size: 24px; // Dimensiunea fontului pentru titlu
+            color: #333; // Culoare text
+            margin-bottom: 20px; // Spațiu sub titlu
+            text-align: center; // Centrează textul
+        }
+
+        .MuiListItemText-root {
+            margin-bottom: 10px; // Spațiu între iteme
+        }
+
+        .MuiTypography-body2 {
+            color: #666; // Culoare text pentru detalii
+        }
+    }
+
+    .back-button {
+        position: absolute; // Poziționare absolută
+        top: 20px; // Distanță de 20px de sus
+        right: 20px; // Distanță de 20px de dreapta
+        z-index: 10; // Asigură că butonul este deasupra altor elemente
+
+    }
+}
